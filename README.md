@@ -1,6 +1,4 @@
 # shadow-ninja
-===========================
-
 
 * Get dependencies using [yarn package manager](https://yarnpkg.com/).
 
