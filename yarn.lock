@@ -838,11 +838,6 @@
     "@babel/helper-validator-identifier" "^7.14.5"
     to-fast-properties "^2.0.0"
 
-"@shadow-ninja/components@file:resources/@shadow-ninja":
-  version "1.0.0"
-  dependencies:
-    gsap "3.7.0"
-
 "@fullhuman/postcss-purgecss@^4.0.3":
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/@fullhuman/postcss-purgecss/-/postcss-purgecss-4.0.3.tgz#55d71712ec1c7a88e0d1ba5f10ce7fb6aa05beb4"
@@ -875,6 +870,11 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
+
+"@shadow-ninja/components@file:resources/@shadow-ninja":
+  version "1.0.0"
+  dependencies:
+    gsap "3.7.0"
 
 "@tailwindcss/forms@0.3.2":
   version "0.3.2"

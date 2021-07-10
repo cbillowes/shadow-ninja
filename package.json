@@ -30,8 +30,8 @@
     "tailwindcss": "^2.2.4"
   },
   "dependencies": {
-    "@shadow-ninja/components": "file:resources/@shadow-ninja",
     "@headlessui/react": "1.2.0",
+    "@shadow-ninja/components": "file:resources/@shadow-ninja",
     "@tailwindcss/forms": "0.3.2",
     "create-react-class": "15.7.0",
     "cross-env": "7.0.3",
