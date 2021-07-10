@@ -1,0 +1,20 @@
+# artifacts
+.cache
+public
+
+# dependencies
+node_modules
+
+# target specific files
+Dockerfile*
+**/*.svg
+**/*.png
+**/*.jpg
+**/*.ico
+**/*.lock
+**/*.sh
+**/*.pdf
+**/*.log
+
+# all dot files
+**/.*

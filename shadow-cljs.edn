@@ -1,0 +1,18 @@
+;; shadow-cljs configuration
+{:verbose true
+
+ :log
+ {:level :debug}
+
+ :deps
+ {:aliases [:cljs]}
+
+ :dev-http
+ {8020 "public"}
+
+ :builds {:app {:target       :browser
+                :output-dir   "public/js"
+                :output-to    "public/js/shadow-ninja.js"
+                :assets-path  "public/"
+                :modules      {:shadow-ninja {:init-fn shadow-ninja.app/init}}
+                :release      {:module-hash-names 8}}}}

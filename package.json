@@ -1,0 +1,43 @@
+{
+  "name": "shadow-ninja-template",
+  "description": "A shadow-cljs and tailwind template with a twist",
+  "version": "1.0.0",
+  "author": "clarice@bouwer.dev",
+  "license": "MIT",
+  "scripts": {
+    "components:watch": "./scripts/components.sh development",
+    "components:release": "./scripts/components.sh production",
+    "shadow:watch": "shadow-cljs watch app",
+    "shadow:release": "shadow-cljs release app",
+    "postcss:build": "cross-env TAILWIND_MODE=build postcss src/css/tailwind.css -o ./public/css/main.css --verbose",
+    "postcss:watch": "cross-env TAILWIND_MODE=watch postcss src/css/tailwind.css -o ./public/css/main.css --verbose -w",
+    "postcss:release": "cross-env NODE_ENV=production postcss src/css/tailwind.css -o ./public/css/main.css --verbose",
+    "dev": "run-p -l *:watch",
+    "release": "yarn run components:upgrade && run-s *:release"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "7.14.7",
+    "@tailwindcss/jit": "0.1.18",
+    "autoprefixer": "^10.2.6",
+    "cssnano": "5.0.3",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "npm-run-all": "4.1.5",
+    "postcss": "^8.3.5",
+    "postcss-cli": "8.3.1",
+    "postcss-import": "14.0.2",
+    "postcss-nesting": "8.0.1",
+    "shadow-cljs": "2.13.0",
+    "tailwindcss": "^2.2.4"
+  },
+  "dependencies": {
+    "@shadow-ninja/components": "file:resources/@shadow-ninja",
+    "@headlessui/react": "1.2.0",
+    "@tailwindcss/forms": "0.3.2",
+    "create-react-class": "15.7.0",
+    "cross-env": "7.0.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-easy-emoji": "1.5.0",
+    "react-icons": "4.2.0"
+  }
+}
