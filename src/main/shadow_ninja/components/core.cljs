@@ -1,6 +1,9 @@
 (ns shadow-ninja.components.core
-  (:require ["@shadow-ninja/components" :refer [Example]]))
+  (:require ["@shadow-ninja/components" :refer [HelloWorld Click]]))
 
-(defn example-of-an-external-react-component []
-  [:div
-   [Example]])
+(defn hello-world []
+  [HelloWorld])
+
+
+(defn click []
+  [Click])

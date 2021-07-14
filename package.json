@@ -16,27 +16,34 @@
     "release": "yarn run components:upgrade && run-s *:release"
   },
   "devDependencies": {
+    "@babel/cli": "7.14.5",
+    "@babel/core": "7.14.6",
     "@babel/preset-env": "7.14.7",
+    "@babel/preset-react": "7.14.5",
+    "@rollup/plugin-babel": "5.3.0",
     "@tailwindcss/jit": "0.1.18",
-    "autoprefixer": "^10.2.6",
+    "autoprefixer": "10.2.6",
     "cssnano": "5.0.3",
-    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-react-hooks": "4.2.0",
     "npm-run-all": "4.1.5",
-    "postcss": "^8.3.5",
+    "postcss": "8.3.5",
     "postcss-cli": "8.3.1",
     "postcss-import": "14.0.2",
     "postcss-nesting": "8.0.1",
+    "rollup": "2.53.1",
+    "rollup-plugin-delete": "2.0.0",
+    "rollup-plugin-peer-deps-external": "2.2.4",
     "shadow-cljs": "2.13.0",
-    "tailwindcss": "^2.2.4"
+    "tailwindcss": "2.2.4"
   },
   "dependencies": {
     "@headlessui/react": "1.2.0",
-    "@shadow-ninja/components": "file:resources/@shadow-ninja",
+    "@shadow-ninja/components": "file:resources/@shadow-ninja/components",
     "@tailwindcss/forms": "0.3.2",
     "create-react-class": "15.7.0",
     "cross-env": "7.0.3",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
     "react-easy-emoji": "1.5.0",
     "react-icons": "4.2.0"
   }

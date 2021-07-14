@@ -17,21 +17,24 @@ rm -rf ./resources/@shadow-ninja/node_modules/
 echo
 
 echo "---------- Install npm packages in the @shadow-ninja package."
-cd ./resources/@shadow-ninja
+cd ./resources/@shadow-ninja/components
 pwd
 yarn install
 echo
 
+
+# Right now there is no distinction between the two environments
+
 if [ $1 == "development" ]
 then
   echo "---------- Pack debug version."
-  yarn run debug
+  yarn run build
 fi
 
 if [ $1 == "production" ]
 then
   echo "---------- Pack release version."
-  yarn run release
+  yarn run build
 fi
 
 echo
