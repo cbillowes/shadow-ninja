@@ -34,3 +34,7 @@ This will run a bunch of scripts in parallel:
   [npm packages and modules](https://docs.npmjs.com/about-packages-and-modules).
   and contributing [packages](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry) to the registry
   for an idea of how to create an npm package. We won't be pushing our package to the registry.
+
+## Oh the glory!
+
+* Libraries that call hooks need to use `:>` to use the function as a react component, and wrap the response with `as-element`.
